@@ -1,0 +1,3 @@
+cd C:\MinGW\bin
+
+gcc "C:\Users\Deyvson\Desktop\Projeto Final\Projeto_final_deivison\main.c" "C:\Users\Deyvson\Desktop\Projeto Final\Projeto_final_deivison\matrix.c" -o executavel_deivison

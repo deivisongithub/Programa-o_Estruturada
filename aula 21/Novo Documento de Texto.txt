@@ -1,0 +1,36 @@
+/*Aluno: Deivison rodrigues jordao
+ *Professor: Yuri Malheiros
+ *Programaçao estrurada
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void){
+    int start,end,add;
+    printf("Digite o número de inicio: ");
+    scanf("%d",&start);
+    printf("Digite o número final: ");
+    scanf("%d",&end);
+    printf("Digite o número de passo: ");
+    scanf("%d",&add);
+    range(start,end,add);
+    return 0;
+}
+
+int *range(int inicio, int fim, int passo){
+    int *matriz = malloc(((fim-inicio)/passo) * sizeof(int));
+    if (matriz == NULL) {
+        printf("Erro: falha no malloc\n");
+        exit(1);
+    }
+    matriz[0] = inicio;
+    for(i=1;i<(fim-inicio)/passo);i++){
+        if(matriz[i-1] + passo < end){
+            matriz[i] = matriz[i-1] + passo;
+        }
+        else{
+            printf("O array resultante é %d",matriz);
+        }
+    }
+}

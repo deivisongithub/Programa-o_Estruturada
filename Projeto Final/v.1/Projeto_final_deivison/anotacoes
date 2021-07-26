@@ -1,0 +1,9 @@
+struct matrix zeros_matrix(int n_rows, int n_cols){
+
+    int data_zeros[n_cols * n_rows] = {0}; 
+        
+    struct matrix Matrix_zeros;
+    Matrix_zeros = create_matrix(data_zeros,n_rows,n_cols);
+        
+    return Matrix_zeros;
+}
